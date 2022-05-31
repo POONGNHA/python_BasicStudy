@@ -64,6 +64,7 @@ b = [14, 30, 22, 36, 16]
 del b[3]
 print(b)
 
+# slicing
 c = [12, 14, 19, 18, 20]
 # c[0], c[1], c[2]
 print(c[0:3])
@@ -71,3 +72,17 @@ print(c[0:3])
 print(c[0:len(c)])
 # c [0 2 4]
 print(c[0:5:2])
+print(c[:]); print(c[:3]); print(c[2:]);
+print(c[1::2])
+
+# slice with assign
+d = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+d[2:5] = ['a', 'b', 'c']
+print(d)
+
+# flexible to slice
+e = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+e[2:5] = ['a', 'b', 'c', 'd', 'e']
+print(e)
+
+# tuple, range, String also edit unable
